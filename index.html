@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Tracker App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gym Tracker</h1>
+        <nav>
+            <a href="history.html">History</a>
+            <a href="profile.html">Profile</a>
+            <a href="home.html">Home</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="machine-list">
+            <h2 style="color: white;">Exercise Machines</h2>
+            <div class="machine-row">
+                <div class="machine">
+                    <h3>Treadmill</h3>
+                    <label for="distance">Distance (km):</label>
+                    <input type="number" id="distance" placeholder="Enter distance">
+                    <label for="time">Time (min):</label>
+                    <input type="number" id="time" placeholder="Enter time">
+                    <button onclick="saveWorkout('Treadmill')">Save</button>
+                </div>
+
+                <div class="machine">
+                    <h3>Stationary Bike</h3>
+                    <label for="bike-distance">Distance (km):</label>
+                    <input type="number" id="bike-distance" placeholder="Enter distance">
+                    <label for="bike-time">Time (min):</label>
+                    <input type="number" id="bike-time" placeholder="Enter time">
+                    <button onclick="saveWorkout('Stationary Bike')">Save</button>
+                </div>
+            </div>
+
+            <div class="machine-row">
+                <div class="machine">
+                    <h3>Rower</h3>
+                    <label for="rower-distance">Distance (km):</label>
+                    <input type="number" id="rower-distance" placeholder="Enter distance">
+                    <label for="rower-time">Time (min):</label>
+                    <input type="number" id="rower-time" placeholder="Enter time">
+                    <button onclick="saveWorkout('Rower')">Save</button>
+                </div>
+
+                <div class="machine">
+                    <h3>Elliptical</h3>
+                    <label for="elliptical-distance">Distance (km):</label>
+                    <input type="number" id="elliptical-distance" placeholder="Enter distance">
+                    <label for="elliptical-time">Time (min):</label>
+                    <input type="number" id="elliptical-time" placeholder="Enter time">
+                    <button onclick="saveWorkout('Elliptical')">Save</button>
+                </div>
+            </div>
+
+            <div class="machine-row">
+                <div class="machine">
+                    <h3>Weightlifting</h3>
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="Enter weight">
+                    <label for="lift-time">Time (min):</label>
+                    <input type="number" id="lift-time" placeholder="Enter time">
+                    <button onclick="saveWorkout('Weightlifting')">Save</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gym-features">
+            <h2>Gym Features</h2>
+            <p>
+                Our gym offers a wide range of features to help you achieve your fitness goals. 
+                We provide state-of-the-art exercise machines, including treadmills, stationary bikes, and weightlifting equipment. 
+                Our facilities are equipped with personal trainers who are ready to assist you in crafting personalized workout plans. 
+                Additionally, we have group classes available, such as yoga, Zumba, and spinning, catering to various fitness levels.
+                You can track your progress through our dedicated app, which allows you to log workouts and monitor your achievements.
+                The gym also provides a comfortable and motivating environment, complete with high-quality music and modern decor. 
+                With flexible membership plans, you can choose the one that best fits your lifestyle. 
+                We prioritize cleanliness and safety, ensuring that all equipment is regularly sanitized. 
+                Join us today and take the first step towards a healthier, happier you!
+            </p>
+        </section>
+        
+        <footer>
+            <p>Address: AECS Layout, Bengaluru</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</body>
+</html>
